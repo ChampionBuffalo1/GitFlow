@@ -1,0 +1,16 @@
+root: true
+
+extends:
+  - next
+  - prettier
+  - eslint:recommended
+  - plugin:react/recommended
+  - plugin:react/jsx-runtime
+  - plugin:import/recommended
+  - plugin:unicorn/recommended
+  - plugin:security/recommended
+  - plugin:react-hooks/recommended
+
+rules:
+  unicorn/prevent-abbreviations: off
+  import/no-named-as-default: off
