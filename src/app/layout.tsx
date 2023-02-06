@@ -1,8 +1,8 @@
+import { ChildrenProps } from '@/utils/types';
 import '../styles/globals.css';
-import type { ReactNode } from 'react';
-import Providers from './Providers';
+import Providers from './providers';
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function RootLayout({ children }: ChildrenProps) {
   return (
     <html lang="en">
       <head />

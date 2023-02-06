@@ -1,5 +1,4 @@
 root: true
-
 extends:
   - next
   - prettier
@@ -10,7 +9,11 @@ extends:
   - plugin:unicorn/recommended
   - plugin:security/recommended
   - plugin:react-hooks/recommended
-
 rules:
   unicorn/prevent-abbreviations: off
   import/no-named-as-default: off
+  unicorn/filename-case:
+    - warn
+    - cases:
+        kebabCase: true
+        camelCase: true
