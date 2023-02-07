@@ -1,13 +1,14 @@
 import { ChildrenProps } from '@/utils/types';
 import '../styles/globals.css';
-import Providers from './providers';
+import Provider from './providers';
 
 export default function RootLayout({ children }: ChildrenProps) {
   return (
-    <html lang="en">
+    // TODO: Use `next-themes` to toggle dark mode
+    <html lang="en" className="dark">
       <head />
       <body>
-        <Providers>{children}</Providers>
+        <Provider>{children}</Provider>
       </body>
     </html>
   );
