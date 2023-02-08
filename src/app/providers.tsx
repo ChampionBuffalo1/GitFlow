@@ -1,14 +1,13 @@
 'use client';
 import { SWRConfig } from 'swr';
-import { fetcher } from '@/utils/fetch';
 import { ThemeProvider } from 'next-themes';
 import { ChildrenProps } from '@/utils/types';
 
 // https://swr.vercel.app/docs/api#options
 const swrOptions = {
   suspense: false,
-  fetcher,
-  refreshInterval: 60 * 1000
+  refreshInterval: 60 * 1000,
+  fetcher: (url: string) => fetch(url).then(res => res.json())
 };
 
 export default function Provider({ children }: ChildrenProps) {
