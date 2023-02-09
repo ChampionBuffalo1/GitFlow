@@ -6,3 +6,9 @@
 div.react-flow__panel:nth-child(4) {
   display: none;
 }
+
+/* Don't ask me why */
+#full-window {
+  height: 100vh;
+  width: 100%;
+}
