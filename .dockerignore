@@ -1,0 +1,11 @@
+.dockerignore
+Dockerfile
+README.md
+LICENSE
+.gitignore
+.eslint
+.git/
+.next/
+.github/
+.vscode/
+node_modules/

@@ -1,0 +1,17 @@
+# `docker compose up/down` is much easier to remember
+version: '3.8'
+
+services:
+  web:
+    container_name: gitflow
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    restart: on-failure
+    ports:
+      - '${PORT:-3000}:${PORT:-3000}'
+    networks:
+      - main-network
+
+networks:
+  main-network:
