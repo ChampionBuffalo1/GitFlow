@@ -9,9 +9,9 @@ export default function Home() {
           width={80}
           height={80}
           alt="Github Logo"
-          className="relative float-left mx-4 w-80 h-80"
+          className="relative float-left w-auto h-auto mx-4"
         />
-        <label htmlFor="username" className="block m-5 text-2xl font-medium ">
+        <label htmlFor="username" className="block text-2xl font-medium m-7">
           Enter your username
         </label>
         <br />
