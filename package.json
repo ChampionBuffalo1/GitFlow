@@ -10,7 +10,6 @@
     "prettier": "prettier --write \"**/*.{html,js,json,md,mdx,mjs,yml}\""
   },
   "dependencies": {
-    "@next/font": "13.1.6",
     "lru-cache": "^7.14.1",
     "next": "13.1.6",
     "next-themes": "^0.2.1",
@@ -19,6 +18,7 @@
     "reactflow": "^11.5.5"
   },
   "devDependencies": {
+    "@next/font": "^13.1.6",
     "@types/node": "^18.13.0",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
