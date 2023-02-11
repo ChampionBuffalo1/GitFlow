@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function NavBar() {
   return (
-    // bg-blend-darken
+    // bg-blend-darken -> bg-grey-600 ??
     <header className="fixed flex justify-between w-full px-3 py-2 text-white bg-gray-600 ">
       <span className="text-2xl">
         <Link href="/">GitFlow</Link>
