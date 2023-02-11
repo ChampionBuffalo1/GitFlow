@@ -2,32 +2,31 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div id="full-window" className="bg-gradient-to-r from-slate-900 to-slate-700 flex justify-center items-center ">
-      <form action="/networks/github" method="GET">
+    <div id="full-window" className="flex items-center justify-center text-gray-100">
+      <form action="/networks/github/" method="GET" className="w-[25rem]">
         <Image
-          src="https://avatars.githubusercontent.com/u/49675578?v=4"
-          alt="Github logo"
+          src="/gh-white.png"
           width={80}
-          height={60}
-          className="rounded-full relative float-left mx-4 w-auto h-auto"
+          height={80}
+          alt="Github Logo"
+          className="relative float-left mx-4 w-80 h-80"
         />
-        <label htmlFor="username" className="text-gray-100 text-2xl block m-5 font-medium">
+        <label htmlFor="username" className="block m-5 text-2xl font-medium ">
           Enter your username
         </label>
         <br />
         <input
           type="text"
-          className="bg-slate-600 text-gray-100 rounded m-3 p-5"
+          className="p-5 m-3 rounded-full bg-slate-600 w-[inherit]"
           name="username"
           placeholder="Github username"
           required
-          minLength={3}
         />
         <br />
         <input
           type="submit"
           value="Search"
-          className="text-gray-100 bg-blue-500 hover:bg-blue-700 rounded-full text-lg py-2 px-6 my-4 relative float-right"
+          className="relative float-right px-6 py-2 my-4 text-lg bg-blue-500 rounded-full hover:bg-blue-700"
         />
       </form>
     </div>
