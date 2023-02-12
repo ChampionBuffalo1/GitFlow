@@ -4,6 +4,8 @@ It's a simple Next 13 App that displays a Github user's connection as a network 
 
 ## Running locally
 
+The app by default runs on port `3000`.
+
 Clone the project
 
 ```bash
@@ -28,7 +30,7 @@ npm run start
 
 ### Docker Support
 
-If you have docker installed you could use either docker compose or docker to run the app inside a container using `node-alpine` image and passing `PORT` env variable to expose from the container.
+If you have `docker` installed you could run the app inside a container using `node-alpine` docker image.
 
 [Docker](https://www.docker.com/)
 
