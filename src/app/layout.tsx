@@ -10,8 +10,7 @@ const roboto = Roboto({
 
 export default function RootLayout({ children }: ChildrenProps) {
   return (
-    // TODO: Use `next-themes` to toggle dark mode
-    <html lang="en" className={`${roboto.className} dark`}>
+    <html lang="en" className={roboto.className}>
       <head />
       <body className="bg-gradient-to-r from-slate-900 to-slate-700">
         <NavBar />
