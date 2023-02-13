@@ -1,6 +1,6 @@
-# Gitwork
+# GitFlow
 
-It's a simple Next 13 App that displays a Github user's connection as a network graph
+A github user network-graph visualisation project built using [Next.js 13](https://nextjs.org/) with the currently experimental `appDir`.
 
 ## Running locally
 
