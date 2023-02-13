@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Change this to `false` to offload compression to nginx (using docker)
+  compress: true,
   output: 'standalone',
-  poweredByHeader: false,
   generateEtags: false,
+  reactStrictMode: true,
+  poweredByHeader: false,
   experimental: {
     appDir: true
   },
