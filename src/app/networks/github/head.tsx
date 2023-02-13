@@ -1,7 +1,7 @@
 'use client';
 import { useSearchParams } from 'next/navigation';
 
-export default function head() {
+export default function Head() {
   const searchParams = useSearchParams();
   return (
     <>
