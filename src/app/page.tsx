@@ -2,7 +2,10 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div id="full-window" className="flex items-center justify-center overflow-hidden text-gray-100">
+    <div
+      id="full-window"
+      className="flex items-center justify-center overflow-hidden text-gray-100 bg-gradient-to-r from-slate-900 to-slate-700"
+    >
       <form action="/networks/github/" method="GET" className="w-[20rem]">
         <Image
           src="/gh-white.png"
