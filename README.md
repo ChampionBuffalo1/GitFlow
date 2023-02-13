@@ -9,7 +9,8 @@ The app by default runs on port `3000`.
 Clone the project
 
 ```bash
-git clone https://github.com/ChampionBuffalo1/Gitwork.git
+git clone https://github.com/ChampionBuffalo1/GitFlow.git
+cd GitFlow
 ```
 
 [Yarn](https://yarnpkg.com/):
