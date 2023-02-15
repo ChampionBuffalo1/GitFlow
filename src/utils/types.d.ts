@@ -33,5 +33,5 @@ export type GhUserFollowers = Omit<GhFound, 'followers'>[];
 export type GhUser = {
   id: number;
   login: string;
-  followerCount: number;
+  followerCount?: number;
 };

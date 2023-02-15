@@ -9,24 +9,25 @@ function AvatarNode({ data }: { data: GhUser }) {
   return (
     <div className="px-4 py-2 bg-gray-600 rounded-md border-1">
       <div className="flex">
-        <div className="flex items-center justify-center w-7 h-7 rounded-full bg-[#3c444f]">
-          <Image
-            src={`https://avatars.githubusercontent.com/u/${data.id}`}
-            width={40}
-            height={40}
-            alt="avatar"
-            className="rounded-full"
-          />
-        </div>
-        <div className="ml-2">
-          <p className="text-sm text-gray-200">{data.login}</p>
-          <p className="text-sm text-gray-200">
-            {data.followerCount} {singularize('Followers', data.followerCount)}
-          </p>
-        </div>
+        <Image
+          src={`https://avatars.githubusercontent.com/u/${data.id}`}
+          width={40}
+          height={40}
+          alt="avatar"
+          className="flex items-center justify-center w-8 h-8 rounded-full"
+        />
+
+        <span className="ml-2 text-sm text-gray-200">
+          <p>{data.login}</p>
+          {data.followerCount && (
+            <p>
+              {data.followerCount} {singularize('Followers', data.followerCount)}
+            </p>
+          )}
+        </span>
       </div>
       <Handle type="target" position={Position.Top} />
-      {data.followerCount > 0 && <Handle type="source" position={Position.Bottom} />}
+      {data.followerCount && data.followerCount > 0 && <Handle type="source" position={Position.Bottom} />}
     </div>
   );
 }
