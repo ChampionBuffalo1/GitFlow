@@ -1,6 +1,9 @@
+/**
+ * @param word Plural word
+ * @param count
+ * @returns Singular form of the word (removing "s" from the word)
+ */
 export const singularize = (word: string, count: number) => {
-  if (count < 2) {
-    return word.substring(0, word.length - 1);
-  }
+  if (count < 2) return word.slice(0, -1);
   return word;
 };
