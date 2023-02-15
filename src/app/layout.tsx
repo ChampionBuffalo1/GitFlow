@@ -12,9 +12,9 @@ export default function RootLayout({ children }: ChildrenProps) {
   return (
     <html lang="en" className={roboto.className}>
       <head />
-      <body className="bg-gradient-to-r from-slate-900 to-slate-700">
+      <body>
         <NavBar />
-        {children}
+        <main className="mt-12">{children}</main>
       </body>
     </html>
   );

@@ -3,8 +3,8 @@ import Link from 'next/link';
 export default function NavBar() {
   return (
     // bg-blend-darken -> bg-grey-600 ??
-    <header>
-      <nav className="fixed flex justify-between w-full px-3 py-2 text-white bg-gray-600">
+    <header className="fixed top-0 w-full">
+      <nav className="flex justify-between px-3 py-2 text-gray-100 bg-gray-700">
         <span className="text-2xl">
           <Link href="/">GitFlow</Link>
         </span>
