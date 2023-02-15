@@ -14,7 +14,7 @@ export default function RootLayout({ children }: ChildrenProps) {
       <head />
       <body>
         <NavBar />
-        {children}
+        <main className="mt-12">{children}</main>
       </body>
     </html>
   );
