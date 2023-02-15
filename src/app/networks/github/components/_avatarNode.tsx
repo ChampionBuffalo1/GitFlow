@@ -24,9 +24,6 @@ export default function SkeletonAvatarNode({ data }: { data: { reversify?: boole
 
 type HandleType = 'source' | 'target';
 const reverse = (label: HandleType, reverse?: boolean): HandleType => {
-  if (reverse) {
-    if (label === 'source') return 'target';
-    else return 'source';
-  }
+  if (reverse) return label === 'source' ? 'target' : 'source';
   return label;
 };

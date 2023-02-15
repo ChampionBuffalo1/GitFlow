@@ -39,7 +39,7 @@ const getNodesAndEdges = (height: number, width: number): [Node<{ reversify?: bo
       [midX + 250, midY + 190],
       [midX, midY - 300]
     ]),
-    new Array(4).fill(0, 0, 4).map((_, i) => ({
+    Array.from({ length: 4 }).map((_, i) => ({
       id: `e0-${i + 1}`,
       type: 'step',
       source: '0',
