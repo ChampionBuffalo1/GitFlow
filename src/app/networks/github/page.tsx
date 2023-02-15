@@ -23,7 +23,7 @@ function GitNetwork({ searchParams }: Pick<SlugType, 'searchParams'>) {
     fetch('https://api.github.com/rate_limit')
       .then<GhRL>(r => r.json())
       .then(json => setRateLimit(json.resources.core.remaining));
-  });
+  }, []);
 
   if (users?.message) notFound();
 
