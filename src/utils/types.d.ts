@@ -25,3 +25,9 @@ export type GhFound = {
   id: number;
   avatar_url: string;
 };
+
+export type GhUser = {
+  id: number;
+  login: string;
+  followerCount: number;
+};
