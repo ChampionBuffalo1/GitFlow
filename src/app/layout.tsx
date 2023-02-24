@@ -1,6 +1,6 @@
 import '../styles/globals.css';
 import NavBar from './navbar';
-import { Roboto } from '@next/font/google';
+import { Roboto } from "next/font/google";
 import { ChildrenProps } from '@/utils/types';
 
 const roboto = Roboto({
