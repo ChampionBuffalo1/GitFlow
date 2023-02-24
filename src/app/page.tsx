@@ -1,5 +1,9 @@
 import Image from 'next/image';
 
+export const metadata = {
+  title: 'GitFlow - Watch Your Gitwork'
+};
+
 export default function Home() {
   return (
     <div

@@ -35,3 +35,5 @@ export type GhUser = {
   login: string;
   followerCount?: number;
 };
+
+export type fetchResp = GhFound & GhNotFound;
